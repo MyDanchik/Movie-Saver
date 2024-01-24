@@ -13,6 +13,7 @@
 		19995FBA2B5EE73900014154 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FB92B5EE73900014154 /* Extension.swift */; };
 		19995FBC2B5EE81F00014154 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FBB2B5EE81F00014154 /* CoreDataManager.swift */; };
 		19995FBE2B5EE8EA00014154 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FBD2B5EE8EA00014154 /* AddMovieView.swift */; };
+		9882D9942B6132E900D65463 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9882D9932B6132E900D65463 /* AddMovieViewModel.swift */; };
 		9890A8F32B5A687A00EFF97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F22B5A687A00EFF97E /* AppDelegate.swift */; };
 		9890A8F52B5A687A00EFF97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F42B5A687A00EFF97E /* SceneDelegate.swift */; };
 		9890A8F72B5A687A00EFF97E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F62B5A687A00EFF97E /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		19995FB92B5EE73900014154 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		19995FBB2B5EE81F00014154 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		19995FBD2B5EE8EA00014154 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		9882D9932B6132E900D65463 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
 		9890A8EF2B5A687A00EFF97E /* Movie-Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9890A8F22B5A687A00EFF97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9890A8F42B5A687A00EFF97E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				19995FBD2B5EE8EA00014154 /* AddMovieView.swift */,
+				9882D9932B6132E900D65463 /* AddMovieViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				19995FB82B5EE6E700014154 /* MainViewCell.swift in Sources */,
 				19995FBC2B5EE81F00014154 /* CoreDataManager.swift in Sources */,
 				9890A8F52B5A687A00EFF97E /* SceneDelegate.swift in Sources */,
+				9882D9942B6132E900D65463 /* AddMovieViewModel.swift in Sources */,
 				19995FBA2B5EE73900014154 /* Extension.swift in Sources */,
 				19995FBE2B5EE8EA00014154 /* AddMovieView.swift in Sources */,
 			);
