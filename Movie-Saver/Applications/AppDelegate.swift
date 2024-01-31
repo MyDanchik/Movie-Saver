@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Movie-Saver
-//
-//  Created by Daniil Yushkevich on 19.01.24.
-//
-
 import UIKit
 import CoreData
 
