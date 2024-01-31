@@ -1,15 +1,19 @@
 import CoreData
 import UIKit
 
+// MARK: - CoreDataError
+
 enum CoreDataError: Error {
     case error(String)
 }
+
+// MARK: - CoreDataManager
 
 final class CoreDataManager {
     static let instance = CoreDataManager()
     private init() {}
 
-    func saveMovie(imageMovie: UIImage, nameMovie: String, ratingMovie: String, releaseDateMovie: String, youTubeLinkMovie: String, descriptionMovie: String) -> Result<Void, CoreDataError> {
+    func saveMovie(imageMovie: Data, nameMovie: String, ratingMovie: String, releaseDateMovie: String, youTubeLinkMovie: String, descriptionMovie: String) -> Result<Void, CoreDataError> {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return .failure(.error("AppDelegate not found"))
         }
@@ -20,10 +24,7 @@ final class CoreDataManager {
 
         let movie = NSManagedObject(entity: entity, insertInto: managedContext)
 
-        if let imageData = imageMovie.pngData() {
-            movie.setValue(imageData, forKey: "imageMovie")
-        }
-
+        movie.setValue(imageMovie, forKey: "imageMovie")
         movie.setValue(nameMovie, forKey: "nameMovie")
         movie.setValue(ratingMovie, forKey: "ratingMovie")
         movie.setValue(releaseDateMovie, forKey: "releaseDateMovie")
@@ -32,13 +33,12 @@ final class CoreDataManager {
 
         do {
             try managedContext.save()
+            return .success(())
         } catch {
             return .failure(.error("Could not save. \(error)"))
         }
-
-        return .success(())
     }
-
+    
     func getMovies() -> Result<[Movie], CoreDataError> {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return .failure(.error("AppDelegate not found"))
@@ -53,6 +53,22 @@ final class CoreDataManager {
             return .success(objects)
         } catch {
             return .failure(.error("Could not fetch \(error)"))
+        }
+    }
+    
+    func deleteMovie(_ movie: Movie) -> Result<Void, CoreDataError> {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return .failure(.error("AppDelegate not found"))
+        }
+
+        let managedContext = appDelegate.persistentContainer.viewContext
+
+        do {
+            managedContext.delete(movie)
+            try managedContext.save()
+            return .success(())
+        } catch {
+            return .failure(.error("Error deleting movie: \(error)"))
         }
     }
 }

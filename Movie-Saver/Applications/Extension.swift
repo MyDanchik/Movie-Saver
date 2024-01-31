@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: - UIView Extension
+
 extension UIView {
     func addSubviews(_ views: UIView...) {
         for view in views {
@@ -7,6 +9,9 @@ extension UIView {
         }
     }
 }
+
+// MARK: - UIStackView Extension
+
 extension UIStackView {
     func addArrangedSubviews(_ views: UIView...) {
         for view in views {
