@@ -22,7 +22,6 @@
 		988157E52B6A60AA00BA67B2 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988157DE2B6A60AA00BA67B2 /* Manrope-Bold.ttf */; };
 		9890A8F32B5A687A00EFF97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F22B5A687A00EFF97E /* AppDelegate.swift */; };
 		9890A8F52B5A687A00EFF97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F42B5A687A00EFF97E /* SceneDelegate.swift */; };
-		9890A8F72B5A687A00EFF97E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8F62B5A687A00EFF97E /* ViewController.swift */; };
 		9890A8FA2B5A687A00EFF97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9890A8F82B5A687A00EFF97E /* Main.storyboard */; };
 		9890A8FD2B5A687A00EFF97E /* Movie_Saver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9890A8FB2B5A687A00EFF97E /* Movie_Saver.xcdatamodeld */; };
 		9890A8FF2B5A687D00EFF97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9890A8FE2B5A687D00EFF97E /* Assets.xcassets */; };
@@ -56,7 +55,6 @@
 		9890A8EF2B5A687A00EFF97E /* Movie-Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9890A8F22B5A687A00EFF97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9890A8F42B5A687A00EFF97E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9890A8F62B5A687A00EFF97E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9890A8F92B5A687A00EFF97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9890A8FC2B5A687A00EFF97E /* Movie_Saver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movie_Saver.xcdatamodel; sourceTree = "<group>"; };
 		9890A8FE2B5A687D00EFF97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				19995FB92B5EE73900014154 /* Extension.swift */,
 				9890A8F22B5A687A00EFF97E /* AppDelegate.swift */,
 				9890A8F42B5A687A00EFF97E /* SceneDelegate.swift */,
-				9890A8F62B5A687A00EFF97E /* ViewController.swift */,
 				9890A8F82B5A687A00EFF97E /* Main.storyboard */,
 				9890A9002B5A687D00EFF97E /* LaunchScreen.storyboard */,
 			);
@@ -264,7 +261,6 @@
 				98F117B62B67A9F000778E5B /* RatingView.swift in Sources */,
 				98F117BA2B67AA6800778E5B /* AddMovieViewModel.swift in Sources */,
 				98F117B42B67A9DF00778E5B /* ReleaseViewModel.swift in Sources */,
-				9890A8F72B5A687A00EFF97E /* ViewController.swift in Sources */,
 				9890A8F32B5A687A00EFF97E /* AppDelegate.swift in Sources */,
 				98F117AA2B67A99D00778E5B /* YoutubeView.swift in Sources */,
 				98F117B82B67A9F900778E5B /* RatingViewModel.swift in Sources */,

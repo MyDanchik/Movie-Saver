@@ -82,9 +82,29 @@ final class DefaultYoutubeView: UIViewController {
     }
 
     @objc func tapOnSave() {
-        if let youtube = getText() {
+        guard let youtube = getText(), !youtube.isEmpty else {
+            let alert = UIAlertController(title: "Ошибка", message: "Введите ссылку", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+
+        if youtube.isValidYouTubeURL() {
             viewModel.setYoutube(youtube: youtube)
             navigationController?.popViewController(animated: true)
+        } else {
+            let alert = UIAlertController(title: "Ошибка", message: "Проверьте ссылку", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
+    }
+}
+
+
+extension String {
+    func isValidYouTubeURL() -> Bool {
+        let youtubeRegex = #"^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+\""#
+        let predicate = NSPredicate(format:"SELF MATCHES %@", youtubeRegex)
+        return predicate.evaluate(with: self)
     }
 }
