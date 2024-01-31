@@ -48,7 +48,7 @@ final class DefaulFullInfoView: UIViewController {
         movieNameLabel.topAnchor.constraint(equalTo: infoView.topAnchor, constant: 29).isActive = true
         movieNameLabel.leadingAnchor.constraint(equalTo: infoView.leadingAnchor, constant: 19).isActive = true
         movieNameLabel.trailingAnchor.constraint(equalTo: infoView.trailingAnchor, constant: -18).isActive = true
-        movieNameLabel.heightAnchor.constraint(equalToConstant: 65).isActive = true
+        movieNameLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 0).isActive = true
         
         starImageView.translatesAutoresizingMaskIntoConstraints = false
         starImageView.topAnchor.constraint(equalTo: movieNameLabel.bottomAnchor, constant: 14).isActive = true
