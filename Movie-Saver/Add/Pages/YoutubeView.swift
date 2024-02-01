@@ -103,7 +103,7 @@ final class DefaultYoutubeView: UIViewController {
 
 extension String {
     func isValidYouTubeURL() -> Bool {
-        let youtubeRegex = #"^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+\""#
+        let youtubeRegex = #"^(http(s)?://)?((w){3}.)?youtu(be|.be)?(\.com)?/.+"#
         let predicate = NSPredicate(format:"SELF MATCHES %@", youtubeRegex)
         return predicate.evaluate(with: self)
     }
