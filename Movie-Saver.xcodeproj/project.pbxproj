@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19995FB42B5EE6BC00014154 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FB32B5EE6BC00014154 /* MainView.swift */; };
-		19995FB62B5EE6D100014154 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FB52B5EE6D100014154 /* MainViewModel.swift */; };
-		19995FB82B5EE6E700014154 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FB72B5EE6E700014154 /* MainViewCell.swift */; };
 		19995FBA2B5EE73900014154 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FB92B5EE73900014154 /* Extension.swift */; };
 		19995FBC2B5EE81F00014154 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FBB2B5EE81F00014154 /* CoreDataManager.swift */; };
 		19995FBE2B5EE8EA00014154 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19995FBD2B5EE8EA00014154 /* AddMovieView.swift */; };
+		19D988352B6C18940035093A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D988322B6C18940035093A /* MainViewModel.swift */; };
+		19D988362B6C18940035093A /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D988332B6C18940035093A /* MainViewCell.swift */; };
+		19D988372B6C18940035093A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D988342B6C18940035093A /* MainView.swift */; };
 		988157DF2B6A60AA00BA67B2 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988157D82B6A60AA00BA67B2 /* Manrope-Medium.ttf */; };
 		988157E02B6A60AA00BA67B2 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988157D92B6A60AA00BA67B2 /* Manrope-SemiBold.ttf */; };
 		988157E12B6A60AA00BA67B2 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988157DA2B6A60AA00BA67B2 /* Manrope-ExtraBold.ttf */; };
@@ -39,12 +39,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19995FB32B5EE6BC00014154 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../../../../../../../../Documents/MainView.swift; sourceTree = "<group>"; };
-		19995FB52B5EE6D100014154 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = ../../../../../../../../Documents/MainViewModel.swift; sourceTree = "<group>"; };
-		19995FB72B5EE6E700014154 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewCell.swift; path = ../../../../../../../../Documents/MainViewCell.swift; sourceTree = "<group>"; };
 		19995FB92B5EE73900014154 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		19995FBB2B5EE81F00014154 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		19995FBD2B5EE8EA00014154 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		19D988322B6C18940035093A /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		19D988332B6C18940035093A /* MainViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		19D988342B6C18940035093A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		988157D82B6A60AA00BA67B2 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
 		988157D92B6A60AA00BA67B2 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		988157DA2B6A60AA00BA67B2 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -100,9 +100,9 @@
 		19995FAA2B5EE5A900014154 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				19995FB32B5EE6BC00014154 /* MainView.swift */,
-				19995FB52B5EE6D100014154 /* MainViewModel.swift */,
-				19995FB72B5EE6E700014154 /* MainViewCell.swift */,
+				19D988342B6C18940035093A /* MainView.swift */,
+				19D988332B6C18940035093A /* MainViewCell.swift */,
+				19D988322B6C18940035093A /* MainViewModel.swift */,
 				98F117BB2B67B58200778E5B /* FullInfoView.swift */,
 			);
 			path = Main;
@@ -256,15 +256,15 @@
 			files = (
 				98F117AC2B67A9A800778E5B /* YoutubeViewModel.swift in Sources */,
 				9890A8FD2B5A687A00EFF97E /* Movie_Saver.xcdatamodeld in Sources */,
-				19995FB42B5EE6BC00014154 /* MainView.swift in Sources */,
-				19995FB62B5EE6D100014154 /* MainViewModel.swift in Sources */,
 				98F117B62B67A9F000778E5B /* RatingView.swift in Sources */,
 				98F117BA2B67AA6800778E5B /* AddMovieViewModel.swift in Sources */,
 				98F117B42B67A9DF00778E5B /* ReleaseViewModel.swift in Sources */,
+				19D988372B6C18940035093A /* MainView.swift in Sources */,
 				9890A8F32B5A687A00EFF97E /* AppDelegate.swift in Sources */,
 				98F117AA2B67A99D00778E5B /* YoutubeView.swift in Sources */,
 				98F117B82B67A9F900778E5B /* RatingViewModel.swift in Sources */,
-				19995FB82B5EE6E700014154 /* MainViewCell.swift in Sources */,
+				19D988352B6C18940035093A /* MainViewModel.swift in Sources */,
+				19D988362B6C18940035093A /* MainViewCell.swift in Sources */,
 				19995FBC2B5EE81F00014154 /* CoreDataManager.swift in Sources */,
 				98F117B22B67A9D100778E5B /* ReleaseView.swift in Sources */,
 				9890A8F52B5A687A00EFF97E /* SceneDelegate.swift in Sources */,
